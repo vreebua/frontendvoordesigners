@@ -1,0 +1,93 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: Helvetica Neue;
+    text-align: center;
+}
+
+h1 {
+    background: linear-gradient(0.25turn, #377f33, #e63428, #f4ea5b, #274e9c);
+    color: white;
+    grid-column: 1/5;
+    margin: 0;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+h2 {
+    border-bottom: dotted;
+    border-color: black;
+    border-width: thin;
+    color: white;
+    grid-column: 1/5;
+    padding: 1em;
+}
+
+.blauwfoto {
+    display: none;
+    grid-column: 1/5;
+}
+
+.groenfoto {
+    display: none;
+    grid-column: 1/5;
+}
+
+.geelfoto {
+    display: none;
+    grid-column: 1/5;
+}
+
+.roodfoto {
+    display: none;
+    grid-column: 1/5;
+}
+
+label input {
+    display: block;
+    visibility: hidden;
+}
+
+label span {
+    border: solid;
+    border-radius: 30%;
+    border-width: thin;
+    padding: 2.5em;
+}
+
+[type=checkbox]:checked + .spangroen {
+    /* <-- style its checked state */
+    background: green;
+    border-color: green;
+    color: green;
+}
+
+[type=checkbox]:checked + .spanrood {
+    /* <-- style its checked state */
+    background: red;
+    border-color: red;
+    color: red;
+}
+
+[type=checkbox]:checked + .spangeel {
+    /* <-- style its checked state */
+    background: yellow;
+    border-color: yellow;
+    color: yellow;
+}
+
+[type=checkbox]:checked + .spanblauw {
+    /* <-- style its checked state */
+    background: blue;
+    border-color: blue;
+    color: blue;
+}
+
+img {
+    height: 250px;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 250px;
+}
